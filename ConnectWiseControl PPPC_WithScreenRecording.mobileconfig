@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PayloadContent</key>
+	<array>
+		<dict>
+			<key>PayloadDescription</key>
+			<string>ConnectWiseControl PPPC</string>
+			<key>PayloadDisplayName</key>
+			<string>ConnectWiseControl PPPC</string>
+			<key>PayloadIdentifier</key>
+			<string>BEE165E6-42EE-4647-AC05-90A9F7A1E97F</string>
+			<key>PayloadOrganization</key>
+			<string>ConnectWise</string>
+			<key>PayloadType</key>
+			<string>com.apple.TCC.configuration-profile-policy</string>
+			<key>PayloadUUID</key>
+			<string>BEE165E6-42EE-4647-AC05-90A9F7A1E97F</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+			<key>Services</key>
+			<dict>
+				<key>Accessibility</key>
+				<array>
+					<dict>
+						<key>Allowed</key>
+						<true/>
+						<key>CodeRequirement</key>
+						<string>identifier "com.apple.bash" and anchor apple</string>
+						<key>Comment</key>
+						<string></string>
+						<key>Identifier</key>
+						<string>/bin/bash</string>
+						<key>IdentifierType</key>
+						<string>path</string>
+					</dict>
+					<dict>
+						<key>Allowed</key>
+						<true/>
+						<key>CodeRequirement</key>
+						<string>identifier "com.screenconnect.client.access" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = "K8M3XDZV9Y"</string>
+						<key>Comment</key>
+						<string></string>
+						<key>Identifier</key>
+						<string>com.screenconnect.client.access</string>
+						<key>IdentifierType</key>
+						<string>bundleID</string>
+					</dict>
+				</array>
+				<key>AppleEvents</key>
+				<array>
+					<dict>
+						<key>AEReceiverCodeRequirement</key>
+						<string>identifier "com.apple.systemevents" and anchor apple</string>
+						<key>AEReceiverIdentifier</key>
+						<string>com.apple.systemevents</string>
+						<key>AEReceiverIdentifierType</key>
+						<string>bundleID</string>
+						<key>Allowed</key>
+						<true/>
+						<key>CodeRequirement</key>
+						<string>identifier "com.apple.bash" and anchor apple</string>
+						<key>Comment</key>
+						<string></string>
+						<key>Identifier</key>
+						<string>/bin/bash</string>
+						<key>IdentifierType</key>
+						<string>path</string>
+					</dict>
+					<dict>
+						<key>AEReceiverCodeRequirement</key>
+						<string>identifier "com.apple.systemevents" and anchor apple</string>
+						<key>AEReceiverIdentifier</key>
+						<string>com.apple.systemevents</string>
+						<key>AEReceiverIdentifierType</key>
+						<string>bundleID</string>
+						<key>Allowed</key>
+						<true/>
+						<key>CodeRequirement</key>
+						<string>identifier "com.screenconnect.client.access" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = "K8M3XDZV9Y"</string>
+						<key>Comment</key>
+						<string></string>
+						<key>Identifier</key>
+						<string>com.screenconnect.client.access</string>
+						<key>IdentifierType</key>
+						<string>bundleID</string>
+					</dict>
+				</array>
+				<key>ListenEvent</key>
+				<array>
+				  <dict>
+					<key>Identifier</key>
+					<string>com.screenconnect.client.access</string>
+					<key>IdentifierType</key>
+					<string>bundleID</string>
+					<key>CodeRequirement</key>
+					<string>identifier "com.screenconnect.client.access" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = "K8M3XDZV9Y"</string>
+					<key>Authorization</key>
+					<string>AllowStandardUserToSetSystemService</string>
+					<key>Comment</key>
+					<string>Test: after installing the profile, open Terminal.app and run 'ls ~/Library/Application Support/com.apple.TCC'. If ls returns a directory listing and exits with 0, this override is working. Without the override, ls should return "Operation not permitted" and exit with non-zero.</string>
+				  </dict>
+				</array>
+				<key>ScreenCapture</key>
+				<array>
+				  <dict>
+					<key>Identifier</key>
+					<string>com.screenconnect.client.access</string>
+					<key>IdentifierType</key>
+					<string>bundleID</string>
+					<key>CodeRequirement</key>
+					<string>identifier "com.screenconnect.client.access" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = "K8M3XDZV9Y"</string>
+					<key>Authorization</key>
+					<string>AllowStandardUserToSetSystemService</string>
+				  </dict>
+				</array>
+				 <key>ScreenCapture</key>
+				<array>
+				  <dict>
+				   <key>Identifier</key>
+				   <string>com.screenconnect.client.access</string>
+				   <key>IdentifierType</key>
+				   <string>bundleID</string>
+				   <key>CodeRequirement</key>
+				   <string>identifier "com.screenconnect.client.access" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = "K8M3XDZV9Y"</string>
+				   <key>Authorization</key>
+				   <string>AllowStandardUserToSetSystemService</string>
+				   <key>Comment</key>
+					<string>Test: Install this profile and log in as a standard (non-administrator) user. Open Terminal.app and run 'screencapture -c'. You should receive a prompt that says '"Terminal" would like to record this computer's screen'. Click "Open System Settings". You should see an entry for Terminal in the Screen Recording preferences that you can modify even though you are not an administrator.</string>
+				  </dict>
+			   </array>
+			  </dict>
+		</dict>
+	</array>
+	<key>PayloadDescription</key>
+	<string>ConnectWiseControl PPPC</string>
+	<key>PayloadDisplayName</key>
+	<string>ConnectWiseControl PPPC</string>
+	<key>PayloadIdentifier</key>
+	<string>77C06357-D87F-431E-BC89-1C8A5CA2516B</string>
+	<key>PayloadOrganization</key>
+	<string>ConnectWise</string>
+	<key>PayloadType</key>
+	<string>Configuration</string>
+	<key>PayloadUUID</key>
+	<string>77C06357-D87F-431E-BC89-1C8A5CA2516B</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+	<key>payloadScope</key>
+	<string>System</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+</dict>
+</plist>
